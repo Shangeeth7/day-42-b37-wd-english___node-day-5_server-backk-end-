@@ -39,7 +39,7 @@ module.exports = async (user, mailType) => {
         html: emailContent,
       };
     } else {
-      emailContent = `<div><h1>Please click on the below link to reset your password</h1> <a href="http://localhost:3000/resetpassword/${encryptedToken}">Click here to reset Password</a>  </div>`;
+      emailContent = `<div><h1>Please click on the below link to reset your password</h1> <a href="https://splendid-empanada-ab0010.netlify.app/resetpassword/${encryptedToken}">Click here to reset Password</a>  </div>`;
 
       mailOptions = {
         from: process.env.EMAIL,
